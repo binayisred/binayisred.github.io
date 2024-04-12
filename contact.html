@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact page</title>
+    <link rel="stylesheet" href="contactcss.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <style>
+      body {
+        background-image: url("contactus.jpg");
+        background-size: cover;
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <ul>
+        <li><a href="index.htm">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+    <div class="contact">
+      <h1>Contacts</h1>
+      <h2>
+        We are delighted to be your travel partner! At Binay's Tourism Agency,
+        we strive to provide exceptional travel experiences. Our dedicated team
+        is committed to making your journey memorable and hassle-free.<br /><br />
+        For inquiries about our services or assistance, feel free to contact us
+        through any of the following channels:
+        <br /><br />
+        Email: binayire@gmail.com<br />
+        Phone: +977-9746391619<br />
+        Website: www.binayisred.github.io<br />
+        Address: Banganga, 04 Kapilvastu, Nepal<br />
+      </h2>
+      <form
+        action="/action.php"
+        name="myform"
+        class="form-input"
+        onsubmit="return validateform()"
+        method="post"
+      >
+        <table border="3" align="center" width="550" height="350">
+          <tr align="center">
+            <th>Enter your Name</th>
+            <td>
+              <input
+                type="text"
+                placeholder="Your name"
+                size="40"
+                name="your_name"
+              />
+            </td>
+          </tr>
+          <tr align="center">
+            <th>Enter your Phone number</th>
+            <td>
+              <input
+                type="text"
+                name="your_phoneno."
+                placeholder="Your Phone number"
+                size="40"
+                maxlength="10"
+              />
+            </td>
+          </tr>
+          <tr align="center">
+            <th>Enter your Email Address</th>
+            <td>
+              <input
+                type="email"
+                placeholder="Your Email Address"
+                size="40"
+                name="your_email"
+              />
+            </td>
+          </tr>
+          <tr align="center">
+            <th>Enter your message</th>
+            <td>
+              <textarea
+                name="message"
+                cols="40"
+                placeholder="Your message"
+                rows="10"
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+        <br />
+        <center>
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </center>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="">about us</a></li>
+              <li><a href="">our services</a></li>
+              <li><a href="">privacy policy</a></li>
+              <li><a href="">affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">orders</a></li>
+              <li><a href="">Queries</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>online materiasl</h4>
+            <ul>
+              <li><a href="">Books</a></li>
+              <li><a href="">Essays</a></li>
+              <li><a href="">Motivation</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://www.twitter.com/" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href=""><i class="fab fa-linkedin" target="_blank"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function validateform() {
+        let x = document.forms["myform"]["your_name"].value;
+        if (x == "") {
+          alert("Please fill out your name");
+          return false;
+        }
+        let y = document.forms["myform"]["your_phoneno."].value;
+        if (y == "") {
+          alert("Please fill out your phone number");
+          return false;
+        }
+        let z = document.forms["myform"]["your_email"].value;
+        if (z == "") {
+          alert("Please fill out your email section");
+          return false;
+        }
+        let a = document.forms["myform"]["message"].value;
+        if (a == "") {
+          alert("Please write your query");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

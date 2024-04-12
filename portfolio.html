@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tourism</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .image {
+        width: 200px; /* Adjust the width as needed */
+        text-align: center;
+      }
+
+      .image img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .image p {
+        text-align: center;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="top">
+      <nav>
+        <div class="logo"></div>
+        <ul>
+          <li><a href="getstarted.htm">Home</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
+    <header>
+      <header style="text-align: center;">
+        <h1>Portfolio Section</h1>
+      </header>
+
+
+    <div class="container">
+      <div class="image" onclick="openImage('getstarted.jpg')">
+        <img src="getstarted.jpg" alt="Image 1" />
+        <p>This is the mockup of the Home Page.</p>
+      </div>
+
+      <div class="image" onclick="openImage('indexpage.jpg')">
+        <img src="indexpage.jpg" alt="Image 1" />
+        <p>This is the mockup of the Home Page.</p>
+      </div>
+
+      <div class="image" onclick="openImage('tourismmockup.png')">
+        <img src="tourismmockup.png" alt="Image 1" />
+        <p>This is the mockup of the Home Page.</p>
+      </div>
+
+      <div class="image" onclick="openImage('getstarted.jpg')">
+        <img src="getstarted.jpg" alt="Image 1" />
+        <p>This is the mockup of the Home Page.</p>
+      </div>
+
+      <div class="image" onclick="openImage('aboutusmockup.png')">
+        <img src="aboutusmockup.png" alt="Image 1" />
+        <p>This is the mockup of the Home Page.</p>
+      </div>
+
+      <div class="image" onclick="openImage('portfolio.png')">
+        <img src="portfolio.png" alt="Image 1" />
+        <p>This is the mockup of the Home Page.</p>
+      </div>
+    </div>
+
+    <script>
+      function openImage(imagePath) {
+        var overlay = document.createElement("div");
+        overlay.style.position = "fixed";
+        overlay.style.top = "0";
+        overlay.style.left = "0";
+        overlay.style.width = "100%";
+        overlay.style.height = "100%";
+        overlay.style.backgroundColor = "rgba(0,0,0,0.8)";
+        overlay.style.zIndex = "9999";
+        overlay.style.display = "flex";
+        overlay.style.alignItems = "center";
+        overlay.style.justifyContent = "center";
+
+        var img = document.createElement("img");
+        img.src = imagePath;
+        img.style.maxWidth = "90%";
+        img.style.maxHeight = "90%";
+
+        overlay.appendChild(img);
+
+        overlay.onclick = function () {
+          document.body.removeChild(overlay);
+        };
+
+        document.body.appendChild(overlay);
+      }
+    </script>
+    <ul>
+      <li><a href="part2.html" target="_blank">Week 5</a></li>
+      <li><a href="qns3part1.html" target="_blank">Week 5</a></li>
+      <li><a href="week5qns2.html" target="_blank">Week 5</a></li>
+      <li><a href="weekfiveqns1.html" target="_blank">Week 5</a></li>
+      <li><a href="qns1.html" target="_blank">Week 6</a></li>
+      <li><a href="week6qns3.html" target="_blank">Week 6</a></li>
+      <li><a href="qns2.html" target="_blank">Week 6</a></li>
+      <li><a href="week7qns1.html" target="_blank">Week 7</a></li>
+      <li><a href="week7qns2.html" target="_blank">Week 7</a></li>
+      <li><a href="week8ex1.html" target="_blank">Week 8</a></li>
+      <li><a href="week8ex2.html" target="_blank">Week 8</a></li>
+      <li><a href="about.html" target="_blank">Week 2</a></li>
+      <li><a href="about.html" target="_blank">Week 2</a></li>
+      <li><a href="about.html" target="_blank">Week 2</a></li>
+      <li><a href="about.html" target="_blank">Week 2</a></li>
+
+      <!-- Add more links here for other weeks -->
+    </ul>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="">About Us</a></li>
+              <li><a href="">Our Services</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Affiliate Program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Get Help</h4>
+            <ul>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">Orders</a></li>
+              <li><a href="">Queries</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Online Materials</h4>
+            <ul>
+              <li><a href="">Books</a></li>
+              <li><a href="">Essays</a></li>
+              <li><a href="">Motivation</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/" target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://www.twitter.com/" target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href=""><i class="fab fa-linkedin" target="_blank"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

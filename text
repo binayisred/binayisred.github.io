@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+      }
+      .image {
+        position: relative;
+        overflow: hidden;
+        height: 200px; /* Set a fixed height for all images */
+      }
+      .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensure images cover the container */
+        transition: transform 0.3s ease-in-out;
+      }
+      .image:hover img {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image" onclick="openImage('01.webp')">
+        <img src="01.webp" alt="Image 1" />
+        <h1> This is the html button.</h1>
+        
+      </div>
+      <div class="image" onclick="openImage('02.jpg')">
+        <img src="02.jpg" alt="Image 2" />
+      </div>
+      <!-- Add more image divs as needed -->
+    </div>
+
+    <script>
+      function openImage(imagePath) {
+        var overlay = document.createElement("div");
+        overlay.style.position = "fixed";
+        overlay.style.top = "0";
+        overlay.style.left = "0";
+        overlay.style.width = "100%";
+        overlay.style.height = "100%";
+        overlay.style.backgroundColor = "rgba(0,0,0,0.8)";
+        overlay.style.zIndex = "9999";
+        overlay.style.display = "flex";
+        overlay.style.alignItems = "center";
+        overlay.style.justifyContent = "center";
+
+        var img = document.createElement("img");
+        img.src = imagePath;
+        img.style.maxWidth = "90%";
+        img.style.maxHeight = "90%";
+
+        overlay.appendChild(img);
+
+        overlay.onclick = function () {
+          document.body.removeChild(overlay);
+        };
+
+        document.body.appendChild(overlay);
+      }
+    </script>
+  </body>
+</html>

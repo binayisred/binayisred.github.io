@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Section</title>
+    <link rel="stylesheet" href="news.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <style>
+      /* Styles for news section */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-image: url("nepalbg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #ffffff; /* Set text color to white for visibility */
+      }
+
+      .news-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.6
+        ); /* Semi-transparent background to improve text readability */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .news-article {
+        margin-bottom: 30px;
+      }
+
+      .news-article h2 {
+        margin-top: 0;
+      }
+
+      .news-article p {
+        margin-top: 5px;
+      }
+
+      .news-article img {
+        width: 100%; /* Set width to 100% */
+        max-width: 500px; /* Set maximum width */
+        display: block;
+        margin-top: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Styles for navigation bar */
+      nav {
+        background-color: #333;
+        color: #fff;
+        overflow: hidden;
+      }
+
+      nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+
+      nav ul li {
+        float: left;
+      }
+
+      nav ul li a {
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+        color: #fff;
+      }
+
+      /* Styles for footer */
+      .footer {
+        background-color: #333;
+        color: #fff;
+        padding: 30px 0;
+      }
+
+      .footer .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .footer-col {
+        flex: 1;
+        margin-right: 20px;
+      }
+
+      .footer-col h4 {
+        margin-bottom: 20px;
+      }
+
+      .footer-col ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .footer-col ul li {
+        margin-bottom: 10px;
+      }
+
+      .footer-col ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .social-links a {
+        color: #fff;
+        margin-right: 10px;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo"></div>
+      <ul>
+        <li><a href="getstarted.htm">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </nav>
+
+    <div class="news-container">
+      <h1 style="text-align: center">Latest News</h1>
+      <div class="news-article">
+        <h2>
+          Emerging from Winter's Embrace, the Landscape Awakens with Vibrant
+          Greenery.
+        </h2>
+        <img src="nepalbg.jpg" alt="Image 1" />
+        <p>
+          As winter recedes in Nepal, revealing the majestic peaks of the
+          Himalayas, a new chapter unfolds. With the thawing of snow, the
+          verdant greenery emerges, painting the valleys and hillsides with
+          life. From the terraced fields of the Kathmandu Valley to the lush
+          forests of the Annapurna region, Nepal's natural beauty flourishes
+          once more.
+        </p>
+      </div>
+      <div class="news-article">
+        <h2>Spring's Symphony: Ghandruk Blossoms into Beauty</h2>
+        <img src="ghandruk.jpg" alt="Image 2" />
+        <p>
+          As the season transitions, the terraced fields come alive with the
+          lush greenery, and the rhododendrons burst into a kaleidoscope of
+          blooms. Against the backdrop of snow-capped peaks, Ghandruk enchants
+          visitors with its unparalleled beauty, beckoning them to immerse
+          themselves in the tranquility of nature's awakening.
+        </p>
+      </div>
+      <div class="news-article">
+        <h2>Boudha; Place which feels like the evergreen golden hour.</h2>
+        <img src="boudha.jpg" alt="Image 3" />
+        <p>
+          According to the Newar Buddhist history of Nepal, where the
+          Narayanhiti Palace currently stands once stood palace of King
+          Vikramaditya (of the Licchavi kingdom). King Vikramaditya instructed
+          that a traditional stone drinking fountain (dhunge dhara or lwã hiti)
+          should be built in the southern part of the palace courtyard.
+        </p>
+      </div>
+
+      <div class="news-article">
+        <h2>
+          Buddha Jayanti Beckons: A Timeless Celebration of Peace and
+          Enlightenment.
+        </h2>
+        <img src="lumbini.jpg" alt="Image 2" />
+        <p>
+          As Buddha Jayanti approaches, Nepal prepares to honor the birth,
+          enlightenment, and death of Gautama Buddha. In the gentle spring air,
+          temples and monasteries across the country are adorned with colorful
+          prayer flags, and devotees gather to commemorate the profound
+          teachings of the Enlightened One. From the sacred sites of Lumbini,
+          where Buddha was born, to the tranquil stupas of Kathmandu Valley, the
+          spirit of peace and enlightenment pervades the land, inviting all to
+          reflect on the timeless wisdom of Buddha's teachings.
+        </p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Our Services</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Affiliate Program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get Help</h4>
+          <ul>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Orders</a></li>
+            <li><a href="">Queries</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Online Materials</h4>
+          <ul>
+            <li><a href="">Books</a></li>
+            <li><a href="">Essays</a></li>
+            <li><a href="">Motivation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://www.twitter.com/" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href=""><i class="fab fa-linkedin" target="_blank"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
